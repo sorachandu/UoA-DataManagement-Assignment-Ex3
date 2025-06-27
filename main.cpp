@@ -32,6 +32,14 @@ int get_die(){
     return die.gen();
 }
 
+void won(std::string s){
+    std::cout<<s<<" won!\n";
+}
+
+void lost(std::string s){
+    std::cout<<s<<" lost!\n";
+}
+
 int main(){
     int die1,die2;
     die1=get_die();
@@ -42,4 +50,9 @@ int main(){
     std::cout<<"Die 1: "<<die1<<"\n";
     std::cout<<"Die 2: "<<die2<<"\n";
     std::cout<<"Total value: "<<sum_dice<<"\n";
+    if(sum_dice>=7){
+        won("You");
+    }else{
+        lost("You");
+    }
 }
