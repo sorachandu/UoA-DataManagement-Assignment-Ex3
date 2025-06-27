@@ -1,5 +1,6 @@
 #include<iostream>
 #include<random>
+#include<string>
 
 // std::uniform_int_distributionを利用した一様乱数生成クラス
 class Random_Gen{
@@ -33,6 +34,11 @@ int get_die(){
 }
 
 int main(){
+    std::string user_name;
+    std::cout<<"What is your name?\n"<<"> ";
+    std::cin>>user_name;
+    std::cout<<"Hello, "<<user_name<<"!\n";
+
     int die1,die2;
     die1=get_die();
     die2=get_die();
