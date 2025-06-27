@@ -57,8 +57,8 @@ int main(){
     std::cout<<"Die 2: "<<die2<<"\n";
     std::cout<<"Total value: "<<sum_dice<<"\n";
     if(sum_dice>=7){
-        won("You");
+        won(user_name);
     }else{
-        lost("You");
+        lost(user_name);
     }
 }
